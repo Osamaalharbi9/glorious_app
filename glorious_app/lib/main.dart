@@ -22,78 +22,81 @@ class Myapp extends StatelessWidget {
                 Color.fromARGB(255, 245, 245, 245),
                 Color.fromARGB(255, 205, 205, 205)
               ])),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Flexible(flex: 1, child: Container()),
-              Flexible(
-                flex: 1,
-                // ignore: avoid_unnecessary_containers
-                child: Container(
-                  child: Image.asset(
-                    'assets/images/Comp 10 2.png',
-                    height: 225,
-                    width: 225,
-                  ),
-
-                  //color: Colors.black,
-                ),
-              ),
-              Flexible(
-                flex: 1,
-                // ignore: avoid_unnecessary_containers
-                child: Container(
-                  child: SizedBox.expand(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Text(
-                          'Glorious',
-                          style: GoogleFonts.inter(
-                              fontSize: 24, fontWeight: FontWeight.bold),
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        Text(
-                          'Best way to buy and find Glorious',
-                          style: GoogleFonts.inter(
-                            fontSize: 13,
-                          ),
-                        ),
-                        Text(
-                          'Accessories.',
-                          style: GoogleFonts.inter(
-                            fontSize: 13,
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 40,
-                        ),
-                        ClipRRect(
-                            borderRadius: BorderRadius.circular(16),
-                            child: Container(
-                              height: 69,
-                              width: 262,
-                              color: Colors.black,
-                              child: OutlinedButton(
-                                  onPressed: () {},
-                                  child: Text(
-                                    'Start Now',
-                                    style: GoogleFonts.inter(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w600,
-                                        fontSize: 16),
-                                  )),
-                            ))
-                      ],
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 40),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Flexible(flex: 1, child: Container()),
+                Flexible(
+                  flex: 1,
+                  // ignore: avoid_unnecessary_containers
+                  child: Container(
+                    child: Image.asset(
+                      'assets/images/Comp 10 2.png',
+                      height: 225,
+                      width: 225,
                     ),
+          
+                    //color: Colors.black,
                   ),
-
-                  //color: Colors.black,
                 ),
-              )
-            ],
+                Flexible(
+                  flex: 1,
+                  // ignore: avoid_unnecessary_containers
+                  child: Container(
+                    child: SizedBox.expand(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text(
+                            'Glorious',
+                            style: GoogleFonts.inter(
+                                fontSize: 24, fontWeight: FontWeight.bold),
+                          ),
+                          const SizedBox(
+                            height: 15,
+                          ),
+                          Text(
+                            'Best way to buy and find Glorious',
+                            style: GoogleFonts.inter(
+                              fontSize: 13,
+                            ),
+                          ),
+                          Text(
+                            'Accessories.',
+                            style: GoogleFonts.inter(
+                              fontSize: 13,
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 40,
+                          ),
+                          ClipRRect(
+                              borderRadius: BorderRadius.circular(16),
+                              child: Container(
+                                height: 69,
+                                width: 262,
+                                color: Colors.black,
+                                child: OutlinedButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      'Start Now',
+                                      style: GoogleFonts.inter(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 16),
+                                    )),
+                              ))
+                        ],
+                      ),
+                    ),
+          
+                    //color: Colors.black,
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
