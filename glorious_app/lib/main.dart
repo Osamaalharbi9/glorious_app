@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:glorious_app/shop_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() => runApp(const Myapp());
+void main() => runApp(const MaterialApp(home: Myapp(),) );
 
 //statelesswidget
 class Myapp extends StatelessWidget {
@@ -9,8 +10,8 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return 
+       Scaffold(
         body: Container(
           height: double.infinity,
           width: double.infinity,
@@ -79,7 +80,7 @@ class Myapp extends StatelessWidget {
                                 width: 262,
                                 color: Colors.black,
                                 child: OutlinedButton(
-                                    onPressed: () {},
+                                    onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>const ShopPage()));},
                                     child: Text(
                                       'Start Now',
                                       style: GoogleFonts.inter(
@@ -99,7 +100,7 @@ class Myapp extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
+       );
+    
   }
 }
