@@ -58,7 +58,8 @@ class _ShopPageState extends State<ShopPage> {
                 height: 50,
                 width: double.infinity,
                 color: Colors.grey[900],
-                child: OutlinedButton(  style: OutlinedButton.styleFrom(
+                child: OutlinedButton(
+                    style: OutlinedButton.styleFrom(
                         side: const BorderSide(
                             color: Color.fromARGB(255, 33, 33, 33))),
                     onPressed: () {},
@@ -121,33 +122,79 @@ class _ShopPageState extends State<ShopPage> {
               Color.fromARGB(255, 245, 245, 245),
               Color.fromARGB(255, 205, 205, 205)
             ])),
+        //end of drawer
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            GNav(
-                color: const Color.fromARGB(255, 162, 162, 162),
-                tabActiveBorder: Border.all(color: Colors.white),
-                tabBackgroundColor: Colors.grey.shade100,
+            const SizedBox(height: 120,),
+            
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 30),
+              child: TextField(
+                    decoration: InputDecoration(prefixIcon: const Icon(Icons.search),hintText: 'Search',
+                        border: OutlineInputBorder(borderSide: const BorderSide(color: Colors.white),
+                            borderRadius: BorderRadius.circular(15)))),
+            ),
+            const SizedBox(height: 30,),
+            
+             Padding(
+               padding: const EdgeInsets.symmetric(horizontal: 35),
+               child: Row(
+                children: [
+                   Text('Most popular',style: GoogleFonts.inter(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 24)),
+                ],
+                         ),
+             ),
+            
+              const SizedBox(height: 15,),
+            ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child:
+                      Container(color: Colors.white, height: 480, width: 345)),
+            
+            Container(),
+            const SizedBox(height: 30,),
+            const Divider(
+              color: Colors.white,
+              //thickness: 0.1,
+            ),
+            Expanded(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                tabBorderRadius: 22,
-                //color: Colors.grey,
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      GNav(
+                          color: const Color.fromARGB(255, 162, 162, 162),
+                          tabActiveBorder: Border.all(color: Colors.white),
+                          tabBackgroundColor: Colors.grey.shade100,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          tabBorderRadius: 22,
+                          //color: Colors.grey,
 
-                tabs: [
-                  GButton(
-                    icon: Icons.home_rounded,
-                    text: 'Shop',
-                    onPressed: () {},
+                          tabs: [
+                            GButton(
+                              icon: Icons.home_rounded,
+                              text: 'Shop',
+                              onPressed: () {},
+                            ),
+                            GButton(
+                              //activeBorder: Border.all(color: Colors.black),
+                              icon: Icons.shopping_bag_rounded,
+                              text: 'Cart',
+                              onPressed: () {},
+                            )
+                          ]),
+                    ],
                   ),
-                  GButton(
-                    //activeBorder: Border.all(color: Colors.black),
-                    icon: Icons.shopping_bag_rounded,
-                    text: 'Cart',
-                    onPressed: () {},
-                  )
-                ]),
-            const SizedBox(
-              height: 20,
-            )
+                ],
+              ),
+            ),
+            const  SizedBox(height: 20,)
           ],
         ),
       ),
