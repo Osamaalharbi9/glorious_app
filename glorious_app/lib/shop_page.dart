@@ -126,37 +126,66 @@ class _ShopPageState extends State<ShopPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 120,),
-            
+            const SizedBox(
+              height: 120,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30),
               child: TextField(
-                    decoration: InputDecoration(prefixIcon: const Icon(Icons.search),hintText: 'Search',
-                        border: OutlineInputBorder(borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(15)))),
+                  decoration: InputDecoration(
+                      prefixIcon: const Icon(Icons.search),
+                      hintText: 'Search',
+                      border: OutlineInputBorder(
+                          borderSide: const BorderSide(color: Colors.white),
+                          borderRadius: BorderRadius.circular(15)))),
             ),
-            const SizedBox(height: 30,),
-            
-             Padding(
-               padding: const EdgeInsets.symmetric(horizontal: 35),
-               child: Row(
+            const SizedBox(
+              height: 30,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 35),
+              child: Row(
                 children: [
-                   Text('Most popular',style: GoogleFonts.inter(
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w600,
-                                            fontSize: 24)),
+                  Text('Most popular',
+                      style: GoogleFonts.inter(
+                          color: Colors.black,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 24)),
+                SizedBox(height: 40,)],
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [const SizedBox(width: 30,),
+                  ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Container(//image
+                      //title
+                      //description
+                      //price
+                      //add to cart button
+                          color: Colors.white, height: 480, width: 345)),
+                          const SizedBox(width: 37,),
+                  ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      
+                      child: Container(
+                          color: Colors.white, height: 480, width: 345)),const SizedBox(width: 37,),
+                  ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Container(
+                          color: Colors.white, height: 480, width: 345)),const SizedBox(width: 37,),
                 ],
-                         ),
-             ),
-            
-              const SizedBox(height: 15,),
-            ClipRRect(
-                  borderRadius: BorderRadius.circular(12),
-                  child:
-                      Container(color: Colors.white, height: 480, width: 345)),
-            
+              ),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
             Container(),
-            const SizedBox(height: 30,),
+            const SizedBox(
+              height: 30,
+            ),
             const Divider(
               color: Colors.white,
               //thickness: 0.1,
@@ -194,7 +223,9 @@ class _ShopPageState extends State<ShopPage> {
                 ],
               ),
             ),
-            const  SizedBox(height: 20,)
+            const SizedBox(
+              height: 20,
+            )
           ],
         ),
       ),
