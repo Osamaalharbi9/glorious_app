@@ -168,21 +168,22 @@ class _ShopPageState extends State<ShopPage> {
                   const SizedBox(
                     width: 30,
                   ),
-                  CustomContainer(
+                  const CustomContainer(
                       title: 'GMMK 2',
-                      description1:
-                          'The GMMK 2 is the ultimate gaming keyboard at the best',
-                      description2:
-                          'value possible. It combines premium-grade components',
-                      description3:
-                          'and striking aesthetics for next level gameplay.',
+                      description:
+                          'The GMMK 2 is the ultimate gaming keyboard at the best value possible. It combines premium-grade components and striking aesthetics for next level gameplay.',
                       price: '90\$',
                       image:
                           'assets/images/AnyConv.com__glorious_keyboards_gmmk_2_white_65_ansi_2x.png'),
                   const SizedBox(
                     width: 37,
-                  ),CustomContainer(title: 'title', description1: 'description1', description2: 'description2', description3: 'description3', price: 'price', image: 'image')
-                ,  const SizedBox(
+                  ),
+                  CustomContainer(
+                      title: 'title',
+                      description: 'description1',
+                      price: 'price',
+                      image: 'image'),
+                  const SizedBox(
                     width: 37,
                   ),
                   ClipRRect(
