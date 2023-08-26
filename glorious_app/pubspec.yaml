@@ -65,6 +65,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/Comp 10 2.png
+    - assets/images/AnyConv.com__glorious_keyboards_gmmk_2_white_65_ansi_2x.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

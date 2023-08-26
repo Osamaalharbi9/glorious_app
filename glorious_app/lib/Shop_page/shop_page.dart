@@ -1,4 +1,7 @@
+// ignore_for_file: sort_child_properties_last, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
+import 'package:glorious_app/Shop_page/custom_container.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -151,31 +154,44 @@ class _ShopPageState extends State<ShopPage> {
                           color: Colors.black,
                           fontWeight: FontWeight.w600,
                           fontSize: 24)),
-                SizedBox(height: 40,)],
+                  // ignore: prefer_const_constructors
+                  SizedBox(
+                    height: 40,
+                  )
+                ],
               ),
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                children: [const SizedBox(width: 30,),
+                children: [
+                  const SizedBox(
+                    width: 30,
+                  ),
+                  CustomContainer(
+                      title: 'GMMK 2',
+                      description1:
+                          'The GMMK 2 is the ultimate gaming keyboard at the best',
+                      description2:
+                          'value possible. It combines premium-grade components',
+                      description3:
+                          'and striking aesthetics for next level gameplay.',
+                      price: '90\$',
+                      image:
+                          'assets/images/AnyConv.com__glorious_keyboards_gmmk_2_white_65_ansi_2x.png'),
+                  const SizedBox(
+                    width: 37,
+                  ),CustomContainer(title: 'title', description1: 'description1', description2: 'description2', description3: 'description3', price: 'price', image: 'image')
+                ,  const SizedBox(
+                    width: 37,
+                  ),
                   ClipRRect(
                       borderRadius: BorderRadius.circular(12),
-                      child: Container(//image
-                      //title
-                      //description
-                      //price
-                      //add to cart button
+                      child: Container(
                           color: Colors.white, height: 480, width: 345)),
-                          const SizedBox(width: 37,),
-                  ClipRRect(
-                      borderRadius: BorderRadius.circular(12),
-                      
-                      child: Container(
-                          color: Colors.white, height: 480, width: 345)),const SizedBox(width: 37,),
-                  ClipRRect(
-                      borderRadius: BorderRadius.circular(12),
-                      child: Container(
-                          color: Colors.white, height: 480, width: 345)),const SizedBox(width: 37,),
+                  const SizedBox(
+                    width: 37,
+                  ),
                 ],
               ),
             ),
