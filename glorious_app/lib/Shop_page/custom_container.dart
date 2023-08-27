@@ -15,7 +15,7 @@ class CustomContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(22),
         child: Container(
           color: Colors.white,
           height: 480,
@@ -68,15 +68,6 @@ class CustomContainer extends StatelessWidget {
               const SizedBox(
                 height: 5,
               ),
-
-              Row(
-                children: [
-                  const SizedBox(
-                    width: 15,
-                  ),
-                  
-                ],
-              ),
               //button
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -84,12 +75,12 @@ class CustomContainer extends StatelessWidget {
                     price,
                     style: GoogleFonts.inter(
                         fontSize: 22, fontWeight: FontWeight.w600),
-                  ),SizedBox(width: 224,),
+                  ),const SizedBox(width: 224,),
                   ClipRRect(
                     borderRadius:
                         const BorderRadius.only(topLeft: Radius.circular(9)),
                     child: Container(
-                      color: Colors.black,
+                      color: const Color.fromARGB(255, 45, 45, 45),
                       height: 60,
                       width: 60,
                       child: OutlinedButton(

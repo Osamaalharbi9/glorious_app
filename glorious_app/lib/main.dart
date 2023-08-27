@@ -38,7 +38,6 @@ class Myapp extends StatelessWidget {
                       height: 225,
                       width: 225,
                     ),
-          
                     //color: Colors.black,
                   ),
                 ),
