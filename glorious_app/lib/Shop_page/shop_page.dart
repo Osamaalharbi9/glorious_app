@@ -178,9 +178,9 @@ class _ShopPageState extends State<ShopPage> {
                   const SizedBox(
                     width: 37,
                   ),
-                  CustomContainer(
+                  const CustomContainer(
                       title: 'title',
-                      description: 'description1',
+                      description: '1',
                       price: 'price',
                       image: 'image'),
                   const SizedBox(
